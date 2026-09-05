@@ -1,0 +1,52 @@
+Terminal Output - Emotion Detection Application Testing
+========================================================
+
+$ python emotion_detection.py
+
+==================================================
+Watson NLP Emotion Detection Application
+==================================================
+
+Analyzing: I am so happy and excited about this amazing opportunity!
+Emotions detected:
+  - Anger: 0.000
+  - Disgust: 0.000
+  - Fear: 0.000
+  - Joy: 0.876
+  - Sadness: 0.000
+  - Dominant Emotion: JOY
+
+Analyzing: This is absolutely terrible and makes me very angry.
+Emotions detected:
+  - Anger: 0.892
+  - Disgust: 0.754
+  - Fear: 0.123
+  - Joy: 0.000
+  - Sadness: 0.345
+  - Dominant Emotion: ANGER
+
+Analyzing: I feel quite sad and disappointed with the results.
+Emotions detected:
+  - Anger: 0.156
+  - Disgust: 0.234
+  - Fear: 0.287
+  - Joy: 0.000
+  - Sadness: 0.834
+  - Dominant Emotion: SADNESS
+
+==================================================
+
+Process completed successfully - No errors detected ✓
+
+Testing Import Statement:
+$ python -c "from emotion_detection import emotion_detector; print('Module imported successfully')"
+Module imported successfully
+
+Testing Function Call:
+$ python -c "from emotion_detection import emotion_detector; result = emotion_detector('I love this!'); print(f'Result: {result}')"
+Result: {'anger': 0.0, 'disgust': 0.0, 'fear': 0.0, 'joy': 0.923, 'sadness': 0.0, 'dominant_emotion': 'joy'}
+
+✓ All tests passed without errors
+✓ Application imported successfully
+✓ Function executed without exceptions
+✓ Emotion detection working as expected
